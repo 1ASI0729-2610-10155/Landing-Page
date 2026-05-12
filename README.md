@@ -72,6 +72,7 @@ landing-page/
 - Secciones: Producto, Empresa, Soporte
 - Enlaces útiles
 - Copyright
+- 
 
 ## 🎨 Colores
 
