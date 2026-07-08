@@ -3,6 +3,7 @@ const translations = {
         'nav.features': 'Features',
         'nav.how': 'How it works',
         'nav.benefits': 'Benefits',
+        'nav.deployment': 'Deployment',
         'nav.company': 'Company',
         'nav.docs': 'Documentation',
         'nav.login': 'Log in',
@@ -11,6 +12,7 @@ const translations = {
         'hero.copy': 'Protect product quality with temperature and humidity control at every stage of the cold-chain journey.',
         'hero.start': 'Start now',
         'hero.more': 'Learn more',
+        'hero.demo': 'Demo account: test@test.com / password',
         'dashboard.title': 'Dashboard - Live Monitoring',
         'dashboard.active': '5 active shipments',
         'dashboard.shipment1': 'Shipment #1247',
@@ -47,6 +49,21 @@ const translations = {
         'benefits.risk.copy': 'Prevent product deterioration by detecting risky conditions early.',
         'benefits.decisions.title': 'Faster Decisions',
         'benefits.decisions.copy': 'Use real-time information to act immediately and protect the cold chain.',
+        'deployment.eyebrow': 'Final deployment',
+        'deployment.title': 'ColdTrack is live end-to-end',
+        'deployment.subtitle': 'The final version connects a public web app, a deployed REST API and persistent MySQL data.',
+        'deployment.front.title': 'Frontend Web App',
+        'deployment.front.copy': 'Angular application published with Firebase Hosting.',
+        'deployment.api.title': 'Spring Boot API',
+        'deployment.api.copy': 'JWT-secured backend running as a Docker Web Service.',
+        'deployment.data.title': 'Persistent Data',
+        'deployment.data.copy': 'Operational users, shipments, sensors and telemetry stored in MySQL.',
+        'deployment.release.title': 'Final Releases',
+        'deployment.release.copy': 'Frontend and backend releases are available in GitHub.',
+        'deployment.open': 'Open',
+        'deployment.docs': 'API docs',
+        'deployment.backend': 'Backend repo',
+        'deployment.report': 'Project report',
         'company.eyebrow': 'About the company',
         'company.title': 'FreshGuard Technologies',
         'company.copy': 'We are a software engineering team building ColdTrack, a digital solution focused on improving food transport quality through real-time monitoring, alerts and traceability.',
@@ -61,7 +78,8 @@ const translations = {
         'team.roles.deploy': 'Frontend integration, API setup and deployment',
         'team.roles.ux': 'UX/UI artifacts and application structure',
         'cta.title': 'Start Protecting Your Shipments Today',
-        'cta.copy': 'Open the ColdTrack web application and explore the first functional version of the monitoring experience.',
+        'cta.copy': 'Open the ColdTrack web application and explore the final integrated monitoring experience.',
+        'cta.demo': 'Use the demo account: test@test.com / password',
         'cta.button': 'Open application',
         'footer.copy': 'Smart monitoring for food transport.',
         'footer.product': 'Product',
@@ -70,13 +88,14 @@ const translations = {
         'footer.team': 'Team',
         'footer.support': 'Support',
         'footer.appRepo': 'App repository',
-        'footer.system': 'System status',
+        'footer.system': 'API status',
         'footer.rights': '© 2026 ColdTrack. All rights reserved.'
     },
     es: {
         'nav.features': 'Características',
         'nav.how': 'Cómo funciona',
         'nav.benefits': 'Beneficios',
+        'nav.deployment': 'Despliegue',
         'nav.company': 'Empresa',
         'nav.docs': 'Documentación',
         'nav.login': 'Iniciar sesión',
@@ -85,6 +104,7 @@ const translations = {
         'hero.copy': 'Protege la calidad de tus productos con control de temperatura y humedad en cada etapa de la cadena de frío.',
         'hero.start': 'Comenzar ahora',
         'hero.more': 'Más información',
+        'hero.demo': 'Cuenta demo: test@test.com / password',
         'dashboard.title': 'Dashboard - Monitoreo en vivo',
         'dashboard.active': '5 envíos activos',
         'dashboard.shipment1': 'Envío #1247',
@@ -121,6 +141,21 @@ const translations = {
         'benefits.risk.copy': 'Previene el deterioro de productos detectando condiciones de riesgo a tiempo.',
         'benefits.decisions.title': 'Decisiones Más Rápidas',
         'benefits.decisions.copy': 'Usa información en tiempo real para actuar de inmediato y proteger la cadena de frío.',
+        'deployment.eyebrow': 'Despliegue final',
+        'deployment.title': 'ColdTrack funciona de extremo a extremo',
+        'deployment.subtitle': 'La versión final conecta una web pública, una API REST desplegada y datos persistentes en MySQL.',
+        'deployment.front.title': 'Frontend Web App',
+        'deployment.front.copy': 'Aplicación Angular publicada con Firebase Hosting.',
+        'deployment.api.title': 'API Spring Boot',
+        'deployment.api.copy': 'Backend protegido con JWT y ejecutado como Web Service Docker.',
+        'deployment.data.title': 'Datos Persistentes',
+        'deployment.data.copy': 'Usuarios, envíos, sensores y telemetría almacenados en MySQL.',
+        'deployment.release.title': 'Releases Finales',
+        'deployment.release.copy': 'Las releases del frontend y backend están disponibles en GitHub.',
+        'deployment.open': 'Abrir',
+        'deployment.docs': 'Docs API',
+        'deployment.backend': 'Repo backend',
+        'deployment.report': 'Reporte del proyecto',
         'company.eyebrow': 'Acerca de la empresa',
         'company.title': 'FreshGuard Technologies',
         'company.copy': 'Somos un equipo de ingeniería de software que desarrolla ColdTrack, una solución digital enfocada en mejorar la calidad del transporte de alimentos mediante monitoreo en tiempo real, alertas y trazabilidad.',
@@ -135,7 +170,8 @@ const translations = {
         'team.roles.deploy': 'Integración frontend, configuración de API y despliegue',
         'team.roles.ux': 'Artefactos UX/UI y estructura de aplicación',
         'cta.title': 'Comienza a Proteger tus Envíos Hoy',
-        'cta.copy': 'Abre la aplicación web de ColdTrack y explora la primera versión funcional de la experiencia de monitoreo.',
+        'cta.copy': 'Abre la aplicación web de ColdTrack y explora la experiencia final integrada de monitoreo.',
+        'cta.demo': 'Usa la cuenta demo: test@test.com / password',
         'cta.button': 'Abrir aplicación',
         'footer.copy': 'Monitoreo inteligente para el transporte de alimentos.',
         'footer.product': 'Producto',
@@ -144,19 +180,44 @@ const translations = {
         'footer.team': 'Equipo',
         'footer.support': 'Soporte',
         'footer.appRepo': 'Repositorio de la app',
-        'footer.system': 'Estado del sistema',
+        'footer.system': 'Estado de API',
         'footer.rights': '© 2026 ColdTrack. Todos los derechos reservados.'
     }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
     setLanguage('en');
+    setupMobileMenu();
     setupLanguageToggle();
     setupSmoothScrolling();
     setupCardAnimations();
     setupButtonFeedback();
     setupShipmentHover();
 });
+
+function setupMobileMenu() {
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('#primary-navigation');
+
+    if (!toggle || !nav) {
+        return;
+    }
+
+    toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        toggle.setAttribute('aria-label', expanded ? 'Open navigation menu' : 'Close navigation menu');
+        nav.classList.toggle('open', !expanded);
+    });
+
+    nav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Open navigation menu');
+            nav.classList.remove('open');
+        });
+    });
+}
 
 function setupLanguageToggle() {
     document.querySelectorAll('[data-language]').forEach(button => {
