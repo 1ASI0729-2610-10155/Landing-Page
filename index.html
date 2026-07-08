@@ -7,10 +7,16 @@
     <meta name="keywords" content="cold chain, food transport, temperature, humidity, IoT, logistics, monitoring">
     <meta name="author" content="FreshGuard Technologies">
     <title>ColdTrack - Real-Time Monitoring for Food Transport</title>
+    <meta name="theme-color" content="#0052CC">
     <link rel="canonical" href="https://1asi0729-2610-10155.github.io/Landing-Page/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <meta property="og:title" content="ColdTrack - Real-Time Monitoring">
     <meta property="og:description" content="Protect product quality with temperature and humidity control for every shipment.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://1asi0729-2610-10155.github.io/Landing-Page/">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="ColdTrack - Real-Time Monitoring">
+    <meta name="twitter:description" content="Cold-chain shipment monitoring with a deployed Angular frontend, Spring Boot API and MySQL persistence.">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
 </head>
@@ -24,17 +30,23 @@
                 </svg>
                 <span>ColdTrack</span>
             </a>
-            <nav class="nav-menu" aria-label="Primary navigation">
+            <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="primary-navigation" class="nav-menu" aria-label="Primary navigation">
                 <a href="#features" data-i18n="nav.features">Features</a>
                 <a href="#how-it-works" data-i18n="nav.how">How it works</a>
                 <a href="#benefits" data-i18n="nav.benefits">Benefits</a>
+                <a href="#deployment" data-i18n="nav.deployment">Deployment</a>
                 <a href="#company" data-i18n="nav.company">Company</a>
-                <a href="https://github.com/1ASI0729-2610-10155/Landing-Page" target="_blank" rel="noopener" data-i18n="nav.docs">Documentation</a>
+                <a href="https://github.com/1ASI0729-2610-10155/report" target="_blank" rel="noopener" data-i18n="nav.docs">Documentation</a>
             </nav>
             <div class="header-actions">
                 <div class="language-toggle" role="group" aria-label="Language selector">
-                    <button type="button" class="language-button active" data-language="en">EN</button>
-                    <button type="button" class="language-button" data-language="es">ES</button>
+                    <button type="button" class="language-button active" data-language="en" aria-label="Switch language to English">EN</button>
+                    <button type="button" class="language-button" data-language="es" aria-label="Cambiar idioma a español">ES</button>
                 </div>
                 <a class="btn-login" href="https://coldtrack-front-open.web.app" data-i18n="nav.login">Log in</a>
             </div>
@@ -51,6 +63,7 @@
                     <a class="btn btn-primary" href="https://coldtrack-front-open.web.app" data-i18n="hero.start">Start now</a>
                     <a class="btn btn-secondary" href="#company" data-i18n="hero.more">Learn more</a>
                 </div>
+                <p class="demo-note" data-i18n="hero.demo">Demo account: test@test.com / password</p>
                 <div class="dashboard-preview" aria-label="Dashboard preview">
                     <h3 data-i18n="dashboard.title">Dashboard - Live Monitoring</h3>
                     <p class="active-shipments"><span class="status-dot">●</span> <span data-i18n="dashboard.active">5 active shipments</span></p>
@@ -195,6 +208,40 @@
             </div>
         </section>
 
+        <section id="deployment" class="deployment">
+            <div class="container">
+                <p class="eyebrow" data-i18n="deployment.eyebrow">Final deployment</p>
+                <h2 data-i18n="deployment.title">ColdTrack is live end-to-end</h2>
+                <p class="section-subtitle" data-i18n="deployment.subtitle">The final version connects a public web app, a deployed REST API and persistent MySQL data.</p>
+                <div class="deployment-grid">
+                    <article class="deployment-card">
+                        <span class="deployment-badge">Firebase</span>
+                        <h3 data-i18n="deployment.front.title">Frontend Web App</h3>
+                        <p data-i18n="deployment.front.copy">Angular application published with Firebase Hosting.</p>
+                        <a href="https://coldtrack-front-open.web.app" data-i18n="deployment.open">Open</a>
+                    </article>
+                    <article class="deployment-card">
+                        <span class="deployment-badge">Render</span>
+                        <h3 data-i18n="deployment.api.title">Spring Boot API</h3>
+                        <p data-i18n="deployment.api.copy">JWT-secured backend running as a Docker Web Service.</p>
+                        <a href="https://freshguard-coldtrack-api.onrender.com/swagger-ui/index.html" data-i18n="deployment.docs">API docs</a>
+                    </article>
+                    <article class="deployment-card">
+                        <span class="deployment-badge">MySQL</span>
+                        <h3 data-i18n="deployment.data.title">Persistent Data</h3>
+                        <p data-i18n="deployment.data.copy">Operational users, shipments, sensors and telemetry stored in MySQL.</p>
+                        <a href="https://github.com/1ASI0729-2610-10155/FreshGuard.ColdTrack.Platform" target="_blank" rel="noopener" data-i18n="deployment.backend">Backend repo</a>
+                    </article>
+                    <article class="deployment-card">
+                        <span class="deployment-badge">v1.0.0</span>
+                        <h3 data-i18n="deployment.release.title">Final Releases</h3>
+                        <p data-i18n="deployment.release.copy">Frontend and backend releases are available in GitHub.</p>
+                        <a href="https://github.com/1ASI0729-2610-10155/report" target="_blank" rel="noopener" data-i18n="deployment.report">Project report</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section id="company" class="company">
             <div class="container">
                 <div class="section-heading-left">
@@ -246,7 +293,8 @@
         <section class="cta">
             <div class="container">
                 <h2 data-i18n="cta.title">Start Protecting Your Shipments Today</h2>
-                <p data-i18n="cta.copy">Open the ColdTrack web application and explore the first functional version of the monitoring experience.</p>
+                <p data-i18n="cta.copy">Open the ColdTrack web application and explore the final integrated monitoring experience.</p>
+                <p class="demo-note demo-note-light" data-i18n="cta.demo">Use the demo account: test@test.com / password</p>
                 <a class="btn btn-primary btn-large" href="https://coldtrack-front-open.web.app" data-i18n="cta.button">Open application</a>
             </div>
         </section>
@@ -283,9 +331,9 @@
             <div class="footer-column">
                 <h4 data-i18n="footer.support">Support</h4>
                 <ul>
-                    <li><a href="https://github.com/1ASI0729-2610-10155/Landing-Page" target="_blank" rel="noopener" data-i18n="nav.docs">Documentation</a></li>
+                    <li><a href="https://github.com/1ASI0729-2610-10155/report" target="_blank" rel="noopener" data-i18n="nav.docs">Documentation</a></li>
                     <li><a href="https://github.com/1ASI0729-2610-10155/ColdTrack-Front" target="_blank" rel="noopener" data-i18n="footer.appRepo">App repository</a></li>
-                    <li><a href="https://coldtrack-front-open.firebaseapp.com" data-i18n="footer.system">System status</a></li>
+                    <li><a href="https://freshguard-coldtrack-api.onrender.com/swagger-ui/index.html" data-i18n="footer.system">API status</a></li>
                 </ul>
             </div>
         </div>

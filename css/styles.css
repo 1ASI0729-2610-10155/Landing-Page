@@ -92,6 +92,51 @@ body {
     color: var(--primary-color);
 }
 
+.nav-menu a:focus-visible,
+.logo:focus-visible,
+.language-button:focus-visible,
+.btn-login:focus-visible,
+.footer-column a:focus-visible,
+.deployment-card a:focus-visible {
+    outline: 3px solid rgba(0, 82, 204, 0.35);
+    outline-offset: 4px;
+    border-radius: 6px;
+}
+
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 20px;
+    height: 2px;
+    background: var(--text-dark);
+    border-radius: 999px;
+    transition: var(--transition);
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
 .header-actions {
     display: flex;
     align-items: center;
@@ -243,8 +288,26 @@ body {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
     flex-wrap: wrap;
+}
+
+.demo-note {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1rem;
+    margin: 0 auto 3rem;
+    border: 1px solid #BFDBFE;
+    border-radius: 999px;
+    background: #EFF6FF;
+    color: #1E3A8A;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.demo-note-light {
+    margin-bottom: 1.5rem;
 }
 
 /* ===========================
@@ -541,6 +604,79 @@ body {
 }
 
 /* ===========================
+   DEPLOYMENT SECTION
+   =========================== */
+
+.deployment {
+    padding: var(--padding-lg) var(--padding-sm);
+    background: #F8FBFF;
+}
+
+.deployment h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.deployment .eyebrow {
+    text-align: center;
+}
+
+.deployment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+.deployment-card {
+    background: white;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 24px rgba(15, 17, 23, 0.05);
+    transition: var(--transition);
+}
+
+.deployment-card:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(0, 82, 204, 0.12);
+}
+
+.deployment-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35rem 0.7rem;
+    margin-bottom: 1rem;
+    border-radius: 999px;
+    background: #E0F2FE;
+    color: #075985;
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.deployment-card h3 {
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+}
+
+.deployment-card p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.deployment-card a {
+    color: var(--primary-color);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.deployment-card a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
    CTA SECTION
    =========================== */
 
@@ -718,6 +854,29 @@ body {
         width: 100%;
         flex-direction: column;
         display: none;
+        align-items: stretch;
+        padding: 1rem;
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+        background: white;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-menu a {
+        padding: 0.7rem 0.85rem;
+        border-radius: 8px;
+    }
+
+    .nav-menu a:hover {
+        background: #F3F7FF;
+    }
+
+    .menu-toggle {
+        display: inline-flex;
+        margin-left: auto;
     }
 
     .hero {
@@ -753,6 +912,7 @@ body {
     .caracteristicas h2,
     .como-funciona h2,
     .beneficios h2,
+    .deployment h2,
     .company h2,
     .cta h2 {
         font-size: 1.75rem;
@@ -761,6 +921,7 @@ body {
     .features-grid,
     .steps-grid,
     .benefits-grid,
+    .deployment-grid,
     .company-grid {
         grid-template-columns: 1fr;
     }
@@ -771,6 +932,21 @@ body {
 
     .footer-content {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
     }
 }
 
