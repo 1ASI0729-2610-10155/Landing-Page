@@ -262,10 +262,9 @@ body {
 
 .eyebrow {
     color: var(--primary-color);
-    font-size: 0.82rem;
-    font-weight: 800;
+    font-size: 0.95rem;
+    font-weight: 700;
     letter-spacing: 0;
-    text-transform: uppercase;
     margin-bottom: 0.9rem;
 }
 
@@ -288,26 +287,8 @@ body {
     display: flex;
     gap: 1rem;
     justify-content: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     flex-wrap: wrap;
-}
-
-.demo-note {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.75rem 1rem;
-    margin: 0 auto 3rem;
-    border: 1px solid #BFDBFE;
-    border-radius: 999px;
-    background: #EFF6FF;
-    color: #1E3A8A;
-    font-size: 0.95rem;
-    font-weight: 700;
-}
-
-.demo-note-light {
-    margin-bottom: 1.5rem;
 }
 
 /* ===========================
@@ -427,6 +408,7 @@ body {
 .como-funciona h2,
 .beneficios h2,
 .company h2,
+.team-section h2,
 .cta h2 {
     font-size: 2.5rem;
     text-align: center;
@@ -652,8 +634,7 @@ body {
     background: #E0F2FE;
     color: #075985;
     font-size: 0.78rem;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .deployment-card h3 {
@@ -703,9 +684,14 @@ body {
    COMPANY / TEAM SECTION
    =========================== */
 
-.company {
+.company,
+.team-section {
     padding: var(--padding-lg) var(--padding-sm);
     background: #F8FBFF;
+}
+
+.team-section {
+    background: white;
 }
 
 .section-heading-left {
@@ -727,39 +713,60 @@ body {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .company-grid article,
+.company-detail-grid article,
 .team-card {
     background: white;
     border: 1px solid var(--border-color);
-    border-radius: 8px;
+    border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 8px 20px rgba(15, 17, 23, 0.04);
 }
 
 .company-grid h3,
+.company-detail-grid h3,
 .team-card h4 {
     margin-bottom: 0.75rem;
     color: var(--text-dark);
 }
 
 .company-grid p,
+.company-detail-grid p,
 .team-card p,
 .team-card span {
     color: var(--text-light);
 }
 
-.team-title {
-    font-size: 1.5rem;
-    margin-bottom: 1.25rem;
+.company-detail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
 }
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1.25rem;
+}
+
+.team-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-card img {
+    width: 112px;
+    height: 112px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 4px solid #E8F1FF;
+    box-shadow: 0 8px 20px rgba(0, 82, 204, 0.12);
 }
 
 .team-card p {
@@ -905,6 +912,7 @@ body {
     .como-funciona,
     .beneficios,
     .company,
+    .team-section,
     .cta {
         padding: var(--padding-md) var(--padding-sm);
     }
@@ -914,6 +922,7 @@ body {
     .beneficios h2,
     .deployment h2,
     .company h2,
+    .team-section h2,
     .cta h2 {
         font-size: 1.75rem;
     }
@@ -922,7 +931,8 @@ body {
     .steps-grid,
     .benefits-grid,
     .deployment-grid,
-    .company-grid {
+    .company-grid,
+    .company-detail-grid {
         grid-template-columns: 1fr;
     }
 
