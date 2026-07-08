@@ -41,6 +41,7 @@
                 <a href="#benefits" data-i18n="nav.benefits">Benefits</a>
                 <a href="#deployment" data-i18n="nav.deployment">Deployment</a>
                 <a href="#company" data-i18n="nav.company">Company</a>
+                <a href="#team" data-i18n="nav.team">Team</a>
                 <a href="https://github.com/1ASI0729-2610-10155/report" target="_blank" rel="noopener" data-i18n="nav.docs">Documentation</a>
             </nav>
             <div class="header-actions">
@@ -56,14 +57,13 @@
     <main>
         <section id="home" class="hero">
             <div class="container hero-content">
-                <p class="eyebrow" data-i18n="hero.eyebrow">FreshGuard Technologies</p>
+                <p class="eyebrow" data-i18n="hero.eyebrow">Built by FreshGuard for cold-chain teams</p>
                 <h1 data-i18n="hero.title">Real-Time Monitoring for Food Transport</h1>
                 <p data-i18n="hero.copy">Protect product quality with temperature and humidity control at every stage of the cold-chain journey.</p>
                 <div class="hero-buttons">
                     <a class="btn btn-primary" href="https://coldtrack-front-open.web.app" data-i18n="hero.start">Start now</a>
                     <a class="btn btn-secondary" href="#company" data-i18n="hero.more">Learn more</a>
                 </div>
-                <p class="demo-note" data-i18n="hero.demo">Demo account: test@test.com / password</p>
                 <div class="dashboard-preview" aria-label="Dashboard preview">
                     <h3 data-i18n="dashboard.title">Dashboard - Live Monitoring</h3>
                     <p class="active-shipments"><span class="status-dot">●</span> <span data-i18n="dashboard.active">5 active shipments</span></p>
@@ -215,25 +215,25 @@
                 <p class="section-subtitle" data-i18n="deployment.subtitle">The final version connects a public web app, a deployed REST API and persistent MySQL data.</p>
                 <div class="deployment-grid">
                     <article class="deployment-card">
-                        <span class="deployment-badge">Firebase</span>
+                        <span class="deployment-badge">Firebase Hosting</span>
                         <h3 data-i18n="deployment.front.title">Frontend Web App</h3>
                         <p data-i18n="deployment.front.copy">Angular application published with Firebase Hosting.</p>
                         <a href="https://coldtrack-front-open.web.app" data-i18n="deployment.open">Open</a>
                     </article>
                     <article class="deployment-card">
-                        <span class="deployment-badge">Render</span>
+                        <span class="deployment-badge">Render Web Service</span>
                         <h3 data-i18n="deployment.api.title">Spring Boot API</h3>
                         <p data-i18n="deployment.api.copy">JWT-secured backend running as a Docker Web Service.</p>
                         <a href="https://freshguard-coldtrack-api.onrender.com/swagger-ui/index.html" data-i18n="deployment.docs">API docs</a>
                     </article>
                     <article class="deployment-card">
-                        <span class="deployment-badge">MySQL</span>
+                        <span class="deployment-badge">MySQL database</span>
                         <h3 data-i18n="deployment.data.title">Persistent Data</h3>
                         <p data-i18n="deployment.data.copy">Operational users, shipments, sensors and telemetry stored in MySQL.</p>
                         <a href="https://github.com/1ASI0729-2610-10155/FreshGuard.ColdTrack.Platform" target="_blank" rel="noopener" data-i18n="deployment.backend">Backend repo</a>
                     </article>
                     <article class="deployment-card">
-                        <span class="deployment-badge">v1.0.0</span>
+                        <span class="deployment-badge">Release 1.0</span>
                         <h3 data-i18n="deployment.release.title">Final Releases</h3>
                         <p data-i18n="deployment.release.copy">Frontend and backend releases are available in GitHub.</p>
                         <a href="https://github.com/1ASI0729-2610-10155/report" target="_blank" rel="noopener" data-i18n="deployment.report">Project report</a>
@@ -245,9 +245,9 @@
         <section id="company" class="company">
             <div class="container">
                 <div class="section-heading-left">
-                    <p class="eyebrow" data-i18n="company.eyebrow">About the company</p>
+                    <p class="eyebrow" data-i18n="company.eyebrow">About FreshGuard</p>
                     <h2 data-i18n="company.title">FreshGuard Technologies</h2>
-                    <p data-i18n="company.copy">We are a software engineering team building ColdTrack, a digital solution focused on improving food transport quality through real-time monitoring, alerts and traceability.</p>
+                    <p data-i18n="company.copy">FreshGuard Technologies is a software engineering team focused on making cold-chain logistics easier to supervise, document and improve. Our product, ColdTrack, connects operational teams with shipment, sensor and alert data so quality decisions can be made with evidence instead of guesswork.</p>
                 </div>
                 <div class="company-grid">
                     <article>
@@ -259,29 +259,57 @@
                         <p data-i18n="company.vision.copy">Become a trusted technology partner for safer, more efficient and more traceable food logistics in Peru and Latin America.</p>
                     </article>
                 </div>
-                <h3 class="team-title" data-i18n="team.title">Team members</h3>
+                <div class="company-detail-grid">
+                    <article>
+                        <h3 data-i18n="company.what.title">What we build</h3>
+                        <p data-i18n="company.what.copy">We design web tools for shipment registration, sensor assignment, telemetry tracking, incident alerts and delivery status control.</p>
+                    </article>
+                    <article>
+                        <h3 data-i18n="company.users.title">Who we support</h3>
+                        <p data-i18n="company.users.copy">ColdTrack is oriented to distributors, logistics coordinators and quality teams that need a clear view of every refrigerated delivery.</p>
+                    </article>
+                    <article>
+                        <h3 data-i18n="company.value.title">Why it matters</h3>
+                        <p data-i18n="company.value.copy">Better visibility reduces product loss, improves response times and creates traceable records for continuous improvement.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="team" class="team-section">
+            <div class="container">
+                <div class="section-heading-left">
+                    <p class="eyebrow" data-i18n="team.eyebrow">About the team</p>
+                    <h2 data-i18n="team.title">The team behind ColdTrack</h2>
+                    <p data-i18n="team.subtitle">FreshGuard brings together research, UX, frontend, backend integration, deployment and documentation work to deliver the final version of the platform.</p>
+                </div>
                 <div class="team-grid">
                     <article class="team-card">
+                        <img src="assets/team/eslander-celis.jpg" alt="Eslander Celis Berrospi">
                         <h4>Eslander Celis Berrospi</h4>
                         <p>U201911249</p>
                         <span data-i18n="team.roles.research">Research, documentation and product analysis</span>
                     </article>
                     <article class="team-card">
+                        <img src="assets/team/rodrigo-oblitas.jpg" alt="Rodrigo Oblitas Alcalde">
                         <h4>Rodrigo Oblitas Alcalde</h4>
                         <p>U20221G185</p>
                         <span data-i18n="team.roles.frontend">Landing page and frontend collaboration</span>
                     </article>
                     <article class="team-card">
+                        <img src="assets/team/mariano-vilela.png" alt="Mariano Vilela Menendez">
                         <h4>Mariano Vilela Menendez</h4>
                         <p>U201918216</p>
                         <span data-i18n="team.roles.design">UI, alerts and documentation support</span>
                     </article>
                     <article class="team-card">
+                        <img src="assets/team/aaron-avila.png" alt="Aarón Avila Palacios">
                         <h4>Aarón Avila Palacios</h4>
                         <p>U201823654</p>
                         <span data-i18n="team.roles.deploy">Frontend integration, API setup and deployment</span>
                     </article>
                     <article class="team-card">
+                        <img src="assets/team/mathias-arechaga.jpg" alt="Mathias Arechaga Saavedra">
                         <h4>Mathias Arechaga Saavedra</h4>
                         <p>U202320699</p>
                         <span data-i18n="team.roles.ux">UX/UI artifacts and application structure</span>
@@ -294,7 +322,6 @@
             <div class="container">
                 <h2 data-i18n="cta.title">Start Protecting Your Shipments Today</h2>
                 <p data-i18n="cta.copy">Open the ColdTrack web application and explore the final integrated monitoring experience.</p>
-                <p class="demo-note demo-note-light" data-i18n="cta.demo">Use the demo account: test@test.com / password</p>
                 <a class="btn btn-primary btn-large" href="https://coldtrack-front-open.web.app" data-i18n="cta.button">Open application</a>
             </div>
         </section>
@@ -324,7 +351,7 @@
                 <h4 data-i18n="footer.company">Company</h4>
                 <ul>
                     <li><a href="#company" data-i18n="nav.company">Company</a></li>
-                    <li><a href="#company" data-i18n="footer.team">Team</a></li>
+                    <li><a href="#team" data-i18n="footer.team">Team</a></li>
                     <li><a href="https://github.com/1ASI0729-2610-10155" target="_blank" rel="noopener">GitHub</a></li>
                 </ul>
             </div>
