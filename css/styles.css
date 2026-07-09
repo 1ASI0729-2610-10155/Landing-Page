@@ -625,18 +625,6 @@ body {
     box-shadow: 0 14px 32px rgba(0, 82, 204, 0.12);
 }
 
-.deployment-badge {
-    display: inline-flex;
-    align-items: center;
-    padding: 0.35rem 0.7rem;
-    margin-bottom: 1rem;
-    border-radius: 999px;
-    background: #E0F2FE;
-    color: #075985;
-    font-size: 0.78rem;
-    font-weight: 700;
-}
-
 .deployment-card h3 {
     margin-bottom: 0.75rem;
     color: var(--text-dark);
